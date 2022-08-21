@@ -43,5 +43,15 @@ watchEffect(() => {
         {{ t('button.back') }}
       </button>
     </div>
+
+      <div>
+      <button
+        btn m="3 t6" text-sm
+        @click=" router.push('/');"
+      >
+        {{ t('button.back') }}
+      </button>
+    </div>
   </div>
+  
 </template>

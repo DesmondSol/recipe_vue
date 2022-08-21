@@ -5,10 +5,10 @@
 useHead({
   title: 'Recipe food',
   meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
+    { name: 'description', content: 'Opinionatased Vite Starter Template' },
     {
       name: 'theme-color',
-      content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
+      content: computed(() => isDark.value ? '#00aba9' : '#fffff'),
     },
   ],
   link: [
@@ -22,5 +22,8 @@ useHead({
 </script>
 
 <template>
+
+
+
   <RouterView />
 </template>
