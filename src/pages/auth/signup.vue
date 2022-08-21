@@ -1,11 +1,26 @@
 <script setup>
+import { Field, Form } from 'vee-validate';
 
+
+
+export default {
+  components: {
+    Field,
+    Form,
+  },
+  methods: {
+    // Validator function
+    isRequired(value) {
+      return value ? true : 'This field is required';
+    },
+  },
+};
 
 </script>
 <template>
   <div class="flex justify-center items-center mt-52">
     <div class="w-full max-w-xs">
-      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <form v-slot="{ errors }" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div class="entry-input-title mb-4">
           <label
             for="entry"
