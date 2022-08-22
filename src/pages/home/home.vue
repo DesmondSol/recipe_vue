@@ -1,6 +1,6 @@
 <template>
-  <div class="grid min-h-screen py-32 px-10 ">
-    <div class="w-full md:w-2/3 shadow p-5 rounded-lg bg-white">
+  <div class="flex gap-9 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-1 min-h-screen py-32 px-10 ">
+    <div class="max-w-sm md:w-2/3 shadow p-5 rounded-lg border-2">
       <div class="relative">
         <div class="absolute flex items-center ml-2 h-full">
           <svg class="w-4 h-4 fill-current text-primary-gray-dark" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@
       </div>
 
       <div>
-        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 mt-4">
           <select class="px-4 py-3 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
             <option value="">
               All Type
@@ -152,7 +152,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 ">
+    <div class="grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 ">
       <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
         <img src="https://images.unsplash.com/photo-1627751476653-e954179b174a" alt="" class="rounded-t-lg w-full">
         <div class="p-6">
@@ -163,7 +163,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.
           </p>
         </div>
-
+      <div class="flex flex-row-reverse space-x-4 space-x-reverse pr-8 pb-8">
         <div class="flex space-x-1 items-center">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -180,6 +180,7 @@
           </span>
           <span>20</span>
         </div>
+      </div>
       </div>
       <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
         <img src="https://images.unsplash.com/photo-1572431447238-425af66a273b" alt="" class="rounded-t-lg w-full">
@@ -252,7 +253,7 @@
                                     C7,11.035,7.652,12,10,12z M13,1.6C13,0.963,12.346,0,10,0C7.652,0,7,0.963,7,1.6v4.242h6V1.6z"
         />
       </svg>
-      <span>Extended</span>
+      <span>Add New Recipe</span>
     </button>
   </div>
 </template>

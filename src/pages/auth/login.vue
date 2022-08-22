@@ -54,7 +54,8 @@
           <button
             btn m-3 text-sm
             type="submit"
-            @click="$router.push('/')"
+            href="#"
+            @click="$router.push('/home/home')"
           >
             Log in
           </button>
@@ -67,6 +68,7 @@
           </a>
         </div>
       </form>
+      you dont have an account? <a class='text-blue-500' @click="$router.push('/auth/signup')">signup</a>
     </div>
   </div>
 </template>
