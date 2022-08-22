@@ -5,11 +5,14 @@
 <template>
   <div class="flex justify-center items-center mt-52">
     <div class="w-full max-w-xs">
+      <div>
+        <label text-5xl>Meaza</label>
+      </div>
       <label
-            for="entry"
-            class="block text-gray-700 text-la font-bold mb-y"
-          >
-            Food recipe</label>
+        for="entry"
+        class="block text-gray-700 text-la font-bold mb-y"
+      >
+        Food Recipe</label>
       <form class="shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div class="entry-input-title mb-4">
           <label

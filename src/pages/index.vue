@@ -12,10 +12,16 @@
 </script>
 
 <template>
-  <div>
+  <div mt-52>
+    <div>
+      <label text-5xl>Meaza</label>
+    </div>
+    <div>
+      <label >Food Recipes</label>
+    </div>
     <a
       btn m-3 text-sm
-      :disabled="!name"
+
       @click="$router.push('/auth/login')"
     >
       Login
@@ -23,7 +29,6 @@
   </div><div>
     <a
       btn m-3 text-sm
-      :disabled="!name"
       @click="$router.push('/auth/signup')"
     >
       Signup
