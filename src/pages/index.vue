@@ -1,18 +1,36 @@
 <script setup lang="ts">
-const user = useUserStore()
-const name = $ref(user.savedName)
+// const user = useUserStore()
+// const name = $ref(user.savedName)
 
-const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
+// const router = useRouter()
+// const go = () => {
+//   if (name)
+//     router.push(`/hi/${encodeURIComponent(name)}`)
+// }
 
-const { t } = useI18n()
+// const { t } = useI18n()
 </script>
 
 <template>
   <div>
+    <a
+      btn m-3 text-sm
+      :disabled="!name"
+      @click="$router.push('/auth/login')"
+    >
+      Login
+    </a>
+  </div><div>
+    <a
+      btn m-3 text-sm
+      :disabled="!name"
+      @click="$router.push('/auth/signup')"
+    >
+      Signup
+    </a>
+  </div>
+
+  <!-- <div>
     <div text-4xl>
       <div i-carbon-campsite inline-block />
     </div>
@@ -53,7 +71,7 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <route lang="yaml">
